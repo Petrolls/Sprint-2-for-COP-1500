@@ -1,0 +1,148 @@
+# Ethan Franklin
+#   This Code is a introduction along with 50 lines of codes
+#    print("Hello, my name is Ethan. This is my Sprint 1 for the Integration Project.")
+#    print("First I will start off with a simple input and output statements")
+#    name = input("Please enter your name:", )
+#    color = input("What is your favorite color:", )
+#    icecream = input("What is your favorite Icecream flavor:", )
+#    print(name+"'s", "favorite icream flavor is", icecream, "and their favorite color is", color)
+#    print("Wasnt that fun :D. Now i will demostrate some basic calculation as long with the explanation")
+#    print(14**2) #This is the numeric operator for the power of.
+#    print(10*10) #This is the numeric operator for the multiplicative of.
+#    print(15/5) #This is the numerica operator for the division of.
+#    print(17%8) #This is modulo, which returns to you the remainder of the division.
+#    print(7//2) #This is floor division, which returns the largest interger from the division.
+#    print(9+10) #This is the numeric operator for the addition of.
+#    print(70-1) #This is the numeric operator for the subtraction of.
+#    print("Now after using most of my brain power, I will now demostrate string operators")
+#    costWatermelon = float(4.99)
+#    tax = float(0.06)
+#    taxWatermelon = costWatermelon*tax
+#    totalcost = costWatermelon+taxWatermelon
+#    format(tax, '.2f')
+#    format(costWatermelon, '.2f')
+#    format(taxWatermelon, '.2f')
+#    format(totalcost, '2f')
+#   print("So the tax of florida is:", tax,", so if we take a watermelon and add the tax to it, it will be:", totalcost)
+#   print("That was somewhat taxing, but we always have to look at the happier thing in life :D, right.")
+#   print("So lets continue the expandful adventure, I will now create a dreadfully long story.")
+#   name = input("We need a name for our superhero: ", )
+#   power = input("Input your favorite superhero power: ", )
+#   villan = input("Lets now give yourself a name to your archvillan:", )
+#   sidekick = input("With a villan, we now need a sidekick, tell us a name for your sidekick: ", )
+#   car = input("A Hero needs a teched up super car, give us the name of your favorite car brand: ", )
+#   age = input("Now we need the age of our hero: ", )
+#   birth = input("Everyone is born somewhere, tell us where our hero was born at (type in 'blank,blank' format ): ", )
+#   year = input("Give us the current year: ", )
+#   print("Alright now the story is about to begin!")
+#   print("It was the year,", year, ", and a evil and insidous Villan ran around free from any justice. Until a super awesom and coll hero of the name", name, "Came along")
+#   print("This Villan met his invetiable deafeat, with the might of",name+"'s'",power+".")
+#   print("The world celebrated, as", name, "drove off in his teched up", car+".")
+#   print("Now the world is in peace, with both the world most beloved hero, and his sidekick", sidekick+".")
+#   print("After the fight our hero decided to head back to his home, sweet old", birth+".")
+#   print("Our hero rested here for years until he came to the age of", age".")
+#   print("But the world is at rest, nevermore will a villan dare come and fight are beloved hero again.")
+#   print("May",name,"reign supremeeeeeeeeeeeeee...........e.e.e...e.e!!!r..rff.asf..")
+#   print(ha*100)
+#   print("You fool, I will never be destroyed, I am invincible. I am the omega. I am",villan+".")
+#   print("Well I hope you like that story. It took alot of brain power to muster.")
+#   print("Now I shall sleep and recharg for the better day tommorow. Good night. :D")
+
+# We will start with sprint 2, specifically starting with Shortcut operators
+x = 2
+y = 10
+x += y  # Adds 2 numbers and assigns the result to left operand.
+print(x)
+x -= y  # Subtracts 2 numbers and assigns the result to left operand.
+print(x)
+x *= y  # Multiplies 2 numbers and assigns the result to left operand.
+print(x)
+x /= y  # Divides 2 numbers and assigns the result to left operand.
+print(x)
+x %= y  # Computes the modulus of 2 numbers and assigns the result to left operand.
+print(x)
+x **= y  # Performs exponential (power) calculation on operators and assign value to the equivalent to left operand.
+print(x)
+x //= y  # Performs floor division on operators and assign value to the left operand.
+print(x)
+
+num1 = int(input("please input number that is a multiple of 10: "))
+if num1 % 10 == 0:
+    print("Awesome your number is a multiple of 10!")
+else:
+    print("Your number is not a multiple of 10.")
+
+grade = int(input("Type in your current grade: "))
+if grade >= 100:
+    print("Your Grade is Perfect!")
+elif grade > 90:
+    print("Your Grade is Awesome!")
+elif grade > 80:
+    print("Your Grade Good.")
+elif grade > 70:
+    print("Your Grade Is Okay.")
+elif grade >= 60:
+    print("Your Grade is Alright.")
+elif grade < 60:
+    print("You Need to get your Grade up.")
+
+cost = float(input("Type in the Cost of an Item: "))
+if cost < 5.00:
+    print("You got a good price!")
+elif cost == 5.00:
+    print("You have a decent price!")
+else:
+    print("You have a horrible price.")
+
+z = int(input("Type in the number 2: "))
+if z != 2:
+    print("You didn't type in 2, I trusted you D; ")
+else:
+    print("Thank you, you are my friend!")
+
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than 6")
+
+fruits = ["hero", "villain", "guardian"]
+for x in fruits:
+    print(x)
+for x in "Amadeus":
+    print(x)
+for i in range(6 + 1):
+    print(i)
+
+
+def pyramid():
+    rows = int(input("Enter number of rows: "))
+    for i in range(rows):
+        for j in range(i + 1):
+            print("* ", end="")
+        print("\r")
+
+
+pyramid()
+
+
+def fahr_to_Cels(temp):
+    print((temp - 32) * (5 / 9))
+
+
+fahr_to_Cels(int(input("Enter a temp from Fahrenheit to find the celsius equivalent: ")))
+
+
+# This code asks for the user to enter a number, until they enter 0; it then displays the total number of even numbers
+def sentinel():
+    evens = 0
+    data = int(input("Type in a number (if you want to end, enter 0): "))
+    while data != 0:
+        if data % 2 == 0:
+            evens = evens + 1
+        data = int(input("Type in a number (if you want to end, enter 0): "))
+    print("Evens: ", evens)
+
+
+sentinel()
